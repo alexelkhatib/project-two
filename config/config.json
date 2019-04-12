@@ -3,7 +3,7 @@
     "username": "root",
     "password": "root",
     "port": 3307,
-    "database": "opulent_auctions",
+    "database": "mxn1iennx7besed1",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
