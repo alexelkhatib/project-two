@@ -2,3 +2,17 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+body{
+  background-image: url('/public/images/login2.jpeg');
+  /* color: white; */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+h2,p{
+  color: white;
+}
+.form-group{
+  color:black;
+  background: rgb(109, 106, 102);
+}
