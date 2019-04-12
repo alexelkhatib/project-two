@@ -1,6 +1,8 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
+var products = require("../models/products");
+var index = require("../models/index");
 
 
 
@@ -31,6 +33,11 @@ module.exports = function(app) {
       // res.status(422).json(err.errors[0].message);
     });
   });
+
+  app.get("/api/inventory", function (req, res) {
+    res.json(products);
+  });
+
 
   // Route for logging user out
   app.get("/logout", function(req, res) {

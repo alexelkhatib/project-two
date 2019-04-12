@@ -32,4 +32,14 @@ module.exports = function (app) {
   });
 
 
+  // Here we are setting the inventory path. The data which will populate this is dependent on the api route and button clicked form our drop-down menu
+  app.get("/inventory", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/inventory.html"));
+  });
+
+  // Once a specific item from the inventory page has been selected, user will be taken to the bidding page for the final step of their UX.
+  app.get("/bidding", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/bidding.html"));
+  });
+
 };
