@@ -3,7 +3,7 @@
     "username": "root",
     "password": "root",
     "port": 3307,
-    "database": "mxn1iennx7besed1",
+    "database": "opulent_auctions",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -16,6 +16,7 @@
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "database": "mxn1iennx7besed1"
   }
 }
