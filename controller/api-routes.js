@@ -12,6 +12,8 @@ module.exports = function(app) {
     // Since we're doing a POST with javascript, we can't actually redirect that post into a GET request
     // So we're sending the user back the route to the members page because the redirect will happen on the front end
     // They won't get this or even be able to access this page if they aren't authed
+    console.log(res);
+    
     res.json("/members");
   });
 
@@ -20,7 +22,7 @@ module.exports = function(app) {
   // otherwise send back an error
   app.post("/api/signup", function(req, res) {
     console.log(req.body);
-    db.Customers.create({
+    db.User.create({
       email: req.body.email,
       password: req.body.password
     }).then(function() {
