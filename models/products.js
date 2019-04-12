@@ -33,12 +33,6 @@ module.exports = function(sequelize, DataTypes) {
 //   User.hook("beforeCreate", function(user) {
 //     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
 //   });
-Product.sync({force:true}).then(function(){})
-  return Product.create({
-    prod_name:"Big Foot",
-    prod_Category:"Unknown",
-    prod_img:"Unknown"
-
-  }) ;
+return Product;
 };
-product.findAll({})
+
