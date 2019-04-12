@@ -2,8 +2,8 @@
   "development": {
     "username": "root",
     "password": "root",
-    "port": 8889,
-    "database": "database_development",
+    "port": 3307,
+    "database": "opulent_auctions",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
