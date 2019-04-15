@@ -4,7 +4,7 @@
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
   var Product = sequelize.define("Product", {
-    // The email cannot be null, and must be a proper email before creation
+  
     prod_name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -33,5 +33,16 @@ module.exports = function(sequelize, DataTypes) {
 //   User.hook("beforeCreate", function(user) {
 //     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
 //   });
-  return Product ;
+Product.associate = function(models) {
+  // We're saying that a Product should belong to an Author
+  // A Product can't be created without an Author due to the foreign key constraint
+  Product.belongsTo(models.User, {
+    foreignKey: {
+      allowNull: false
+    }
+  });
 };
+
+return Product;
+};
+// product.findAll({})
