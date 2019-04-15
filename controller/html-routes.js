@@ -27,9 +27,22 @@ module.exports = function (app) {
   app.get("/members", isAuthenticated, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
-  app.get("/members", function (req, res) {
+  app.get("/home", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
+  app.get("/animals", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/animals.html"));
+  });
+  app.get("/art", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/art.html"));
+  }); app.get("/cars", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/cars.html"));
+  }); app.get("/jewelry", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/jewelry.html"));
+  });
+
+
+
 
 
   // Here we are setting the inventory path. The data which will populate this is dependent on the api route and button clicked form our drop-down menu
