@@ -17,6 +17,15 @@ module.exports = function(sequelize, DataTypes) {
 
 
         },
+        Item_Category:{
+            type:DataTypes.STRING,
+            allowNull: false,
+            validate:{
+                len:[1]
+            }
+
+
+        },
         Item_Img:{
 
             type:DataTypes.STRING
