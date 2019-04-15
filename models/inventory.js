@@ -19,29 +19,29 @@ module.exports = function(sequelize, DataTypes) {
         },
         Item_Img:{
 
-            type:DataTypes.STRING,
-            type:DataTypes.blob
+            type:DataTypes.STRING
+            // type:DataTypes.blob
 
 
         },
         Item_Qty:{
 
-            type:DataTypes.integer
+            type:DataTypes.INTEGER
 
 
         },
 
         Starting_Bid_Price:{
 
-            type:DataTypes.decimal
+            type:DataTypes.DECIMAL
         },
-        Starting_Bid_Price:{
+        Ending_Bid_Price:{
 
-            type:DataTypes.decimal
+            type:DataTypes.DECIMAL
         },
 
 
     });
-    return(Student)
+    return Inventory;
 
 }
