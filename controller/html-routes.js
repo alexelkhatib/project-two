@@ -27,9 +27,6 @@ module.exports = function (app) {
   app.get("/members", isAuthenticated, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
-  app.get("/home", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/home.html"));
-  });
   app.get("/animals", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/animals.html"));
   });
@@ -39,15 +36,6 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/cars.html"));
   }); app.get("/jewelry", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/jewelry.html"));
-  });
-
-
-
-
-
-  // Here we are setting the inventory path. The data which will populate this is dependent on the api route and button clicked form our drop-down menu
-  app.get("/inventory", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/inventory.html"));
   });
 
   // Once a specific item from the inventory page has been selected, user will be taken to the bidding page for the final step of their UX.

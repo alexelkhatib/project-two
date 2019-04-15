@@ -28,7 +28,7 @@ require("./controller/api-routes.js")(app);
 require("./routes/product_api_routes")(app);
 
 // require("./app/routes/api-routes.js")(app);
-require("./routes/product_api_routes")(app);
+// require("./routes/product_api_routes")(app);
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync().then(function () {
