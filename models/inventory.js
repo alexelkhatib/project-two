@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
         Item_name:{
             type:DataTypes.STRING,
             validate:{
-                lan: [1]
+                len: [1]
             }
         },
         Item_Desc:{
