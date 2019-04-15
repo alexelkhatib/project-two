@@ -18,13 +18,19 @@ module.exports = function(app) {
     // create takes an argument of an object describing the item we want to
     // insert into our table. In this case we just we pass in an object with a text
     // and complete property
+    // console.log(req.body);
     db.Product.create({
-        prod_name:"Big Foot",
-        prod_Category:"Unknown",
-        prod_img:"Unknown"
+      "id":1,
+        "prod_name":"Big Foot",
+        "prod_Category":"Unknown",
+        "prod_img":"Unknown",
+        "createdAt":"2019-04-09 17:07:49",
+        "updatedAt": "2019-04-09 17:07:49",
+        "UserId":1
     }).then(function(data) {
       // We have access to the new todo as an argument inside of the callback function
-      res.json(data);
+      // res.json(data);
+      console.log(data);
     });
   });
 
