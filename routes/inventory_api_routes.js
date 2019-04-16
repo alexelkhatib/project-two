@@ -4,10 +4,10 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // GET route for getting all of the todos
+  // 
   app.get("/inventory", function(req, res) {
     // findAll returns all entries for a table when used with no options
-    db.Product.findAll({}).then(function(data) {
+    db.Inventory.findAll({}).then(function(data) {
       // We have access to the todos as an argument inside of the callback function
       res.json(data);
     });
@@ -26,8 +26,8 @@ module.exports = function(app) {
         "Item_Category":"Animal",
         "Item_img":"http://www.todayifoundout.com/wp-content/uploads/2013/05/bigfoot.jpg",
         "Item_Qty":"10",
-        "Starting_bid":"100",
-        "UserId":1
+        "Starting_bid":"100"
+      
     },
     {"Item_name":"Markhor",
     "Item_Desc":"Mountain Goat",
@@ -37,7 +37,7 @@ module.exports = function(app) {
     "Starting_bid":"100",
 },
 
-    {"Item_name":"",
+    {"Item_name":"Big Foot",
         "Item_Desc":"Big Foot",
         "Item_Category":"Animal",
         "Item_img":"http://www.todayifoundout.com/wp-content/uploads/2013/05/bigfoot.jpg",
@@ -64,6 +64,22 @@ module.exports = function(app) {
   });
 
 
+  const newData = {  
+    Item_Qty: '5'
+  };
+  
+  db.pets.update(newData, {where: { Item_Qty: '1' } })  
+  .then(updatedMax => {
+    console.log(updatedMax)
+  })
 
+  app.delete('/inventory/:id', (req, res) => {
+    const id = req.params.id;
+    db.owners.destroy({
+      where: { id: id }
+    })
+      .then(deletedOwner => {
+        res.json(deletedOwner);
+      });
 
 };
