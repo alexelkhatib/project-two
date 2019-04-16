@@ -21,11 +21,13 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Requiring our routes
-require("./controller/html-routes.js")(app);
-require("./controller/api-routes.js")(app);
-// Kevin added
+// require("./controller/html-routes.js")(app);
+// require("./controller/api-routes.js")(app);
+// // Kevin added
 
-require("./routes/product_api_routes")(app);
+// require("./routes/inventory_api_routes")(app);
+
+// require("./routes/product_api_routes")(app);
 
 // require("./app/routes/api-routes.js")(app);
 // require("./routes/product_api_routes")(app);
