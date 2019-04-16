@@ -4,7 +4,7 @@ CREATE DATABASE 'opulent_auctions';
 USE opulent_auctions;
 
 
-INSERT INTO inventories
+INSERT INTO Products
     (id, Item_name, Item_Desc, Item_Img, Item_Qty, Starting_Bid_Price, Ending_Bid_Price, createdAt, updatedAt, category)
 VALUES
     (1, '2014 LaFerrari', 'This vehicle has 2,579 miles, a clean title, one owner, and is located in Long Beach.', 'https://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly9jZG4uZGVhbGVyYWNjZWxlcmF0ZS5jb20vZnVzaW9uLzEvMzIxLzEyMTA2Lzc5MHgxMDI0LzIwMTUtZmVycmFyaS1sYWZlcnJhcmktMmRyLWNwZQ&hmac=JJCu2CWjEeQ', 1, 1,300,000, 2,950,000, '', '', 'Cars');
