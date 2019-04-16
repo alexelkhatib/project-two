@@ -35,10 +35,7 @@ module.exports = function(sequelize, DataTypes) {
 
             type:DataTypes.DECIMAL
         },
-        Ending_Bid_Price:{
-
-            type:DataTypes.DECIMAL
-        },
+     
 
 
     });
