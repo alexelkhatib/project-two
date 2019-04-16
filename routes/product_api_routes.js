@@ -23,7 +23,7 @@ module.exports = function(app) {
       "id":1,
         "prod_name":"Big Foot",
         "prod_Category":"Unknown",
-        "prod_img":"Unknown",
+        "prod_img":"",
         "createdAt":"2019-04-09 17:07:49",
         "updatedAt": "2019-04-09 17:07:49",
         "UserId":1
