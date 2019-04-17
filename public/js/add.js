@@ -16,7 +16,7 @@ $(document).ready(function () {
         $.post("/adminInventory", newInventory,
             function (data) {
 
-                // If a table is available... tell user they are booked.
+                // If a table is available... tell user they are booked...
                 if (data) {
                     alert("Yay! You are officially booked!");
                 }
