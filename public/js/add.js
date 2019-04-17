@@ -43,7 +43,7 @@ $(".submit").on("click", function(event) {
 
     
 
-    
+    //test
     // $.post("/api/tables", newInventory,
     //   function(data) {
 
