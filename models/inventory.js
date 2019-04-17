@@ -2,13 +2,23 @@ module.exports = function(sequelize, DataTypes) {
 
     var Inventory = sequelize.define("Inventory", {
 
-        Item_name:{
+        Item_Name:{
             type:DataTypes.STRING,
             validate:{
                 len: [1]
             }
         },
         Item_Desc:{
+            type:DataTypes.STRING,
+            allowNull: false,
+            validate:{
+                len:[1]
+            }
+
+
+        },
+
+        Item_Category:{
             type:DataTypes.STRING,
             allowNull: false,
             validate:{
@@ -35,13 +45,12 @@ module.exports = function(sequelize, DataTypes) {
 
             type:DataTypes.DECIMAL
         },
-        Ending_Bid_Price:{
-
-            type:DataTypes.DECIMAL
-        },
+     
 
 
     });
     return Inventory;
 
 }
+
+

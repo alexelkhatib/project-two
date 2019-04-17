@@ -43,4 +43,8 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/bidding.html"));
   });
 
+  app.get("/admin/Inventory", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/Inventory.html"));
+  });
+
 };
