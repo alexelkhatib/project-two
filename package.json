@@ -18,7 +18,7 @@
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^4.43.2"
+    "sequelize": "^4.41.2"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/alexelkhatib/project-two/issues"
   },
-  "homepage": "https://github.com/alexelkhatib/project-two#readme"
+  "homepage": "https://github.com/alexelkhatib/project-two#readme",
+  "devDependencies": {}
 }
