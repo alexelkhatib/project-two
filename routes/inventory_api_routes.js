@@ -20,15 +20,14 @@ module.exports = function(app) {
     // and complete property
     // console.log(req.body);
     db.Inventory.create(
-        {"id":1,
-        "Item_ame":"Big Foot",
-        "Item_Desc":"Big Foot",
-        "Item_Category":"Animal",
-        "Item_img":"http://www.todayifoundout.com/wp-content/uploads/2013/05/bigfoot.jpg",
-        "Item_Qty":"10",
-        "Starting_bid":"100",
-        "createdAt":"2019-04-09 17:07:49",
-        "updatedAt":"2019-04-09 17:07:49",
+        {
+        Item_Name:req.body.Item_Name,
+        Item_desc:req.body.Item_desc,
+        item_category:req.body.item_category,
+        Item_img:req.body.Item_img,
+        item_Qty:req.body.item_Qty,
+        Starting_bid:req.body.Starting_bid_price,
+  
         }
 //     ,
 
