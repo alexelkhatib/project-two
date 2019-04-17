@@ -1,7 +1,7 @@
 {
   "name": "1-Passport-Example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Group Project Two",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,5 +19,13 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^4.43.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexelkhatib/project-two.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexelkhatib/project-two/issues"
+  },
+  "homepage": "https://github.com/alexelkhatib/project-two#readme"
 }
