@@ -2,52 +2,55 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
-body{
+body {
   /* background-image: url('/public/images/login2.jpeg');
   /* color: white; */
   /* height: 100%;
   background-size: cover;
   background-position: center;  */
-background-color: black;
+  background-color: black;
 }
-h2,p{
+h2,
+p {
   color: white;
-  
 }
-.form-group{
-  color:black;
+.form-group {
+  color: black;
   background: rgb(109, 106, 102);
 }
-h3{
-  color: black
+h3 {
+  color: black;
 }
 
-#title{
-  color: #66FCF1;
-  font-family: 'Montserrat', sans-serif;
+#title {
+  color: #66fcf1;
+  font-family: "Montserrat", sans-serif;
   margin-left: 90px;
 }
 
-#logopic{
-margin-left: 125px;
+#logopic {
+  margin-left: 125px;
 }
 
-.form-group{
-  background-color:black;;
+.form-group {
+  background-color: black;
   color: #c5c6c7;
 }
 
-#button{
-  color: #1F2833;
+#button {
+  color: #1f2833;
   /* background-color: #1F2833; */
 }
 
-#password-input{
-  color: #66FCF1;
+#password-input {
+  color: #66fcf1;
   background-color: #1f2833;
 }
 
-#email-input{
-  color: #66FCF1;
+#email-input {
+  color: #66fcf1;
   background-color: #1f2833;
+}
+#card {
+  background: pink;
 }
